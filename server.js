@@ -20,10 +20,10 @@ app.get("/all", function (req, res) {
 });
 
 const data = [];
-app.post("/addmovie", function (req, res) {
+app.post("/add", function (req, res) {
   console.log(req.body);
   data.push(req.body);
-  // res.send(data);
+  res.send(data);
 });
 
 /* Telling the server to use the project folder as the root folder. */
